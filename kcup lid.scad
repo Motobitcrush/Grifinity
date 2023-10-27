@@ -1,13 +1,19 @@
-// Parameters
+// Parameters //
+// grid(x/y) is gridfinity grids
+gridx = 5;
+gridy = 4;
+// hole(x/y) is kcup quantity
+holex = 4;
+holey = 2;
 
 
 /* [Advance Variables] */
-cube_length = 216; 
-cube_width = 168;   
+cube_length = gridx*42; 
+cube_width = gridy*42;   
 cube_thickness = 3; 
 
-sc_offset = 2;
-sc_height = 3 ;
+sc_offset = 2.15;
+sc_height = 2.7 ;
 hollow_offset = 2 * sc_offset;
 
 sc_length = cube_length - sc_offset; //small cube
@@ -18,8 +24,8 @@ sc_thickness = cube_thickness - sc_offset;
 cylinder_diameter = 45.5; // Diameter of the cylinders
 cylinder_height = cube_thickness; // Height of the cylinders, same as cube thickness
 cylinder_spacing = 5.5; // Spacing between the cylinders
-cylinder_count_x = 4; // Number of cylinders in the X direction
-cylinder_count_y = 2; // Number of cylinders in the Y direction
+cylinder_count_x = holex; // Number of cylinders in the X direction
+cylinder_count_y = holey; // Number of cylinders in the Y direction
 cylinder_offset = 6; // Offset from the cube's sides
 
 
